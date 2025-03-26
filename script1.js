@@ -20,3 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+function showMessage(event) {
+    event.preventDefault(); // Mencegah form dikirim
+    alert("Masih belum jadi");
+}
