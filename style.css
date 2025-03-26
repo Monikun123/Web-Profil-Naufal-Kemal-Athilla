@@ -1,0 +1,390 @@
+/* body{
+    background-color: aqua;
+}
+
+#Hero{
+
+}
+
+.col{
+
+
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+body{
+    margin: 0;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(16, 16, 132);
+    /* atas kanan bawah kiri */
+    margin: 0;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 80px;
+    justify-content: end;
+    box-shadow: 0px 2px 20px rgba(109,109,109,0.2);
+}
+
+body.dark-mode nav ul{
+    background-color: #1f1f1f;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+body.dark-mode nav ul li a {
+    color: lightgray;
+}
+body.dark-mode nav ul li a:hover {
+    color:rgb(29, 220, 254);
+}
+
+nav ul li a:hover{
+    color:rgb(29, 220, 254);
+}
+
+
+nav ul li:first-child{
+    margin-right: auto;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    padding: 10px 0px;
+    width: 100px;
+    box-shadow: 0px 2px 20px rgba(109,109,109,0.2);
+}
+
+body.dark-mode nav ul li ul {
+    background-color: #222;
+}
+
+
+nav ul li ul li{
+    padding: 10%;
+}
+
+nav ul li:hover > ul{
+display: block;
+}
+/* .logo{
+    margin-right: auto;
+} */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.row-1 #textbawah {
+    color:  rgb(16, 16, 132);
+    font-size: 42px;
+    margin-top: -30px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    animation: typing 3s steps(50, end) forwards, blink 1s infinite;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#hero{
+    margin-top: 200px;
+    display: flex;
+}
+
+#hero .col{
+    width: 50%;
+}
+
+
+section{
+    margin: 0px 90px;
+    padding-bottom: 5px;
+}
+
+
+#col-hero2 {
+    display: flex;
+    justify-content: center;
+}
+
+.row-3 button {
+    margin: 5px 0px;
+    background-color: blue;
+    gap: 15px;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 20px rgba(109,109,109,0.2);
+    cursor: pointer;  
+}
+.row-3 img{
+    background-color: transparent;
+}
+.row-3 button:hover{
+    background-color: rgb(29, 220, 254);
+    color: rgb(59,59,59)
+}
+
+@keyframes floatImage{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+/* body.dark-mode #col-hero2{
+    background-color: #333;
+} */
+#col-hero2 img {
+    margin: auto;
+    animation: floatImage 3s ease-in-out infinite ;
+    position: absolute;
+}
+
+.row-1 h1{
+    font-size: 28px ;
+    color: blue;
+} 
+
+body.dark-mode .row-1 h1{
+    color: lightgray;
+}
+
+.row-2 p{
+    font-size: 16px ;
+} 
+table #exp{
+    font-size: 28px;
+}
+table{
+    width: 100%;
+    /* border-collapse: collapse; */
+    border: none;
+    background-color: #fafafa;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+body.dark-mode table{
+    background-color: #222;
+    color: white;
+}
+
+td[colspan="2"]{
+    width: 50%;
+}
+
+#bawah{
+    margin: center;
+    text-align: center;
+}
+
+table h2, table h1{
+    color:rgb(16, 16, 132);
+}
+body.dark-mode table h2, body.dark-mode table h1{
+    color: lightgray;
+}
+table p{
+    font-size: 14px;
+    color: #555;
+}
+body.dark-mode table p{
+    color: lightgray;
+}
+
+
+td img{
+    display: block;
+    margin: left;
+    border-radius: 30px;
+    animation: floatImage 3s ease-in-out infinite ;
+    margin: 20px;
+
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    align-items: center;
+}
+
+div.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
+    box-shadow: 0px 2px 20px rgb(109, 109, 109, 0.2);
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode .card{
+    background-color: #333;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+.contact {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+input, textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.contact button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover{
+    background-color: greenyellow;
+    color: rgb(59,59,59     )
+}
+body.dark-mode .contact {
+    background: #333;
+    color: white; /* Warna teks agar terlihat jelas */
+}
+
+body.dark-mode .contact input,
+body.dark-mode .contact textarea {
+    background: #222;
+    color: white;
+    border: 1px solid #555; /* Ubah warna border agar terlihat */
+}
+
+body.dark-mode .contact label {
+    color: lightgray;
+}
+#darkModeToggle{
+    justify-content: center;
+    align-items: center;
+}
+.toggle-container {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: lightblue;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .toggle-container.dark{
+    background-color: rgb(10, 10, 53);
+  }
+  
+.toggle-circle {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 1s ease;
+  }
+  
+.toggle-container.dark .toggle-circle {
+    transform: translateX(40px);
+  }
+  
+  .toggle-container::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 11px;
+    left: 10px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    box-shadow: 6px 0 0 0 yellow;
+  }
+  
+  .toggle-container.dark::before {
+    opacity: 1;
+  }
+  
+  .toggle-container::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(255, 225, 0);
+    border-radius: 50%;
+    top: 11px;
+    right: 10px;
+    opacity: 1;
+    transition: opacity 1s ease;
+    box-shadow: 0 0 5px 2px rgb(247, 247, 0);
+  }
+  
+  .toggle-container.dark::after {
+    opacity: 0;
+  }
